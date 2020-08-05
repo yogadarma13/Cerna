@@ -4,6 +4,7 @@
 
 <head>
     <title>Cerna</title>
+    <link rel="icon" href="assets/images/logo.png" />
     <link rel="stylesheet" href="assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,9 +12,12 @@
 <body>
     <header>
         <div class="navbar-container">
-            <h1 class="navbar-title">
-                CERNA
-            </h1>
+            <div class="navbar-title">
+                <img src="assets/images/logo_white.png" alt="CERNA" />
+                <h1>
+                    CERNA
+                </h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Beranda</a></li>
@@ -30,13 +34,14 @@
                 <img class="home-image" src="assets/images/home.png" alt="Cegah Corona" />
                 <div class="text-home">
                     <h1>
-                        CERNA (Cegah Corona)
+                        CERNA
                     </h1>
                     <p>
-                        CERNA adalah aplikasi web yang menyediakan beberapa cara pencegahan virus corona untuk menyebar
+                        CERNA (Cegah Corona) adalah aplikasi web yang menyediakan beberapa cara pencegahan virus corona
+                        agar tidak menyebar
                         lebih luas lagi.
-                        Dengan beberapa pencegahan yang diberikan dapat menjadi dampak yang sangat besar dalam memerangi
-                        virus COVID-19
+                        Dengan mengikuti beberapa cara pencegahan virus corona, kita dapat berpartisipasi dalam
+                        memerangi COVID-19
                     </p>
                 </div>
             </article>
@@ -51,7 +56,8 @@
                     <p>
                         Masker masih menjadi salah satu alat pelindung diri yang penting digunakan untuk mencegah
                         penyebaran virus Corona COVID-19.
-                        Meski sebelumnya hanya disarankan untuk orang yang sakit saja, tapi kini masyarakat juga diimbau
+                        Meski sebelumnya hanya disarankan untuk orang yang sakit saja, tapi kini masyarakat juga
+                        dihimbau
                         untuk menggunakannya.
                     </p>
                 </div>
@@ -97,7 +103,8 @@
                     <p>
                         Daya tahan tubuh yang kuat dapat mencegah munculnya berbagai macam penyakit. Untuk menjaga dan
                         meningkatkan daya tahan tubuh,
-                        Anda disarankan untuk mengonsumsi makanan sehat, seperti sayuran dan buah-buahan, dan makanan
+                        Anda disarankan untuk beristirahat yang cukup dan mengonsumsi makanan sehat, seperti sayuran dan
+                        buah-buahan, dan makanan
                         berprotein, seperti telur, ikan, dan daging tanpa lemak.
                     </p>
                 </div>
@@ -105,15 +112,8 @@
         </div>
         <aside>
             <article id="about">
-                <h1 class="title-about">Tentang Developer</h1>
-                <div class="profile card">
-                    <img src="assets/images/profile.jpg" alt="Profileku" />
-                    <section>
-                        <p>I Kadek Yoga Darma Putra</p>
-                        <p>kadekyoga125@gmail.com</p>
-                        <p>Denpasar</p>
-                    </section>
-                </div>
+                <h1>Tentang Developer</h1>
+                <div class="profile card" id="profile"></div>
             </article>
         </aside>
     </main>
@@ -121,6 +121,8 @@
     <footer>
         <p>CERNA &#169; 2020, Yoga Corporation</p>
     </footer>
+
+    <script src="assets/profile.js"></script>
 </body>
 
 </html>

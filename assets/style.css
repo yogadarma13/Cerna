@@ -33,7 +33,18 @@ header {
 }
 
 .navbar-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-title h1 {
   color: white;
+  margin-left: 16px;
 }
 
 nav li {
@@ -80,6 +91,12 @@ main {
   flex-direction: column;
   color: white;
   margin-left: 24px;
+}
+
+.text-home h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
 }
 
 .article-container {
@@ -131,17 +148,18 @@ aside {
   flex-direction: column;
 }
 
-.title-about {
+#about h1 {
   color: #e73626;
+  font-size: 2em;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 20px;
+  padding: 30px;
   margin-top: 20px;
   display: flex;
-  width: 70%;
+  width: auto;
   align-items: center;
 }
 
@@ -170,40 +188,54 @@ footer {
     max-width: 90%;
     min-width: 90%;
   }
+
   .home {
     max-width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
+
+  .home-image {
+    width: 40%;
+  }
+
   .text-home {
     text-align: center;
-    margin: 0;
+    margin: 24px 0;
   }
+
   .article-container {
     max-width: 90%;
     padding-top: 56px;
   }
-  .article-row{
+
+  .article-row {
     flex-direction: column;
     align-items: center;
   }
-  .text-article{
+
+  .text-article {
     text-align: center;
-    margin: 0px;
+    margin: 0;
   }
+
   .ilustration-image {
     width: 50%;
   }
+
   .card {
     max-width: 50%;
     min-width: 300px;
     flex-direction: column;
     text-align: center;
   }
+
   .profile img {
     width: 150px;
     height: 150px;
   }
+
   .profile section {
     width: 100%;
     margin: 0;
